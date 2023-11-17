@@ -1,6 +1,8 @@
 name: Test Build
 
 on:
+  workflow_run:
+    workflows: [Run Tests]
   pull_request:
     paths-ignore:
       - '**.md'
